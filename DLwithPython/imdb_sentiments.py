@@ -86,5 +86,4 @@ new_model.fit(x_train,
               batch_size= 512)
 
 results = new_model.evaluate(x_test,y_test)
-print(new_model.metrics_names)
-print("Test Accuracy is " + str(results["binary_accuracy"] * 100 + "%"))
+print("Test Accuracy is " + str(round((results[1] * 100),2)) + "%")
